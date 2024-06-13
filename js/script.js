@@ -51,6 +51,6 @@ function navShow() {
           .catch((err) =>  {
               console.log("Something Bad Happened " + err);
           })
-      }, 400000)
+      }, 50000)
   }
   fetchImage();
