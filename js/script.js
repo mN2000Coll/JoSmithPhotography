@@ -14,6 +14,7 @@ function navShow() {
   }
   });
 
+
   let API_KEY = "GJtgsPlioJ_miak48x4uvtYkVO-YdkCo03BDR4197pI";
   let endPoint = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}`
   
@@ -22,7 +23,7 @@ function navShow() {
   let imageURL = document.querySelector('#img_URL');
   let IMGcreator = document.querySelector('#IMG_creator');
   
-  let btn = document.querySelector('.btn');
+  let btn = document.querySelector('.testBtn');
   btn.addEventListener('click', function() {
       clearTimeout(clearTimer);
   })
@@ -50,6 +51,6 @@ function navShow() {
           .catch((err) =>  {
               console.log("Something Bad Happened " + err);
           })
-      }, 5000)
+      }, 400000)
   }
   fetchImage();
