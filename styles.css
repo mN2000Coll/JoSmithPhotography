@@ -1,0 +1,197 @@
+body {
+    background-color: #548D44;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+main {
+    background-color: rgb(246, 248, 255);
+    padding: 3px;
+}
+
+
+
+/* HEADING STYLES */
+h1, h2 {
+    color: #548D44;
+    font-weight: inherit;
+}
+
+
+/* NAV STYLES */
+
+nav {
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.navBlock {
+    
+    justify-content:space-evenly;
+}
+
+.Links {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(71, 69, 69);
+}
+
+nav a:hover {
+    color: #548D44;
+}
+
+.burger {
+    display: none;
+    width: 0%;
+}
+
+/* Image and Logo Styles */
+.img {
+    width: 100%; height: 100%
+}
+
+.img:hover, .pairImg:hover, .logo:hover, .social:hover {
+    animation-name: imgBloom;
+    animation-duration: 2s;
+}
+
+@keyframes imgBloom {
+    from {filter:brightness(100%);}
+    to {filter:brightness(140%);}
+}
+
+.logo {
+    max-height: 185px; 
+    max-width: 158px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.homeGall {
+    background-color: #548D44;
+}
+
+.topPara {
+    color: rgb(41, 41, 41);
+    background-color:#548D44;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.info {
+    color: rgb(41, 41, 41);
+    background-color: rgb(246, 248, 255);
+    display: flex;
+    text-align: left;
+}
+
+.testBtn {
+
+    padding: 15px;
+    border: #548D44 2px solid;
+    margin: 2%;
+}
+
+
+.testBtn:hover {
+    animation: btnFilt 5s;
+    border: #70ba5c 2px solid;
+    background-color: rgb(228, 244, 236);
+    color: #70ba5c;
+    
+}
+
+@keyframes btnFilt {
+    from {filter:hue-rotate(0deg);}
+    to {filter:hue-rotate(360deg);}
+}
+
+.pairImg {
+    background-color: #548D44;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+/* FOOTER STYLES */
+.foot {
+    background-color: rgb(41, 41, 41);;
+    min-height: 300px;
+}
+
+.footInf {
+    text-align: left;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.social {
+    margin: 5px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+
+.map {
+    width: 100%;
+    height: 100%;
+    border:0; display: block; margin: auto; height: 500px; padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .navBlock {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .navBlock #navLinks {
+        display: none;
+        flex-direction: column;
+      }
+    
+
+    .burger {
+        display: flex;
+        width: auto;
+        
+        padding-right: 5px;
+    }
+
+    /* HOME STYLES */
+    .info {
+        flex-direction: column-reverse;
+    }
+
+    .pairImg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* FOOTER STYLES */
+    .foot {
+        min-height: 250px;
+    }
+
+    
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+}
