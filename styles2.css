@@ -1,0 +1,11 @@
+.testBtn {
+  padding: 15px;
+  border: #548D44 2px solid;
+  margin: 2%;
+}
+.testBtn:hover {
+  animation: btnFilt 5s;
+  border: #70ba5c 2px solid;
+  background-color: rgb(228, 244, 236);
+  color: #70ba5c;
+}/*# sourceMappingURL=styles2.css.map */

@@ -1,0 +1,16 @@
+$btnClr: rgb(228, 244, 236);
+
+.testBtn {
+
+    padding: 15px;
+    border: #548D44 2px solid;
+    margin: 2%;
+
+    &:hover {
+        animation: btnFilt 5s;
+        
+    border: #70ba5c 2px solid;
+    background-color: $btnClr;
+    color: #70ba5c;
+    }
+}
