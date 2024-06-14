@@ -14,7 +14,7 @@ function navShow() {
   }
   });
 
-
+// UNSPLASH API CODE
   let API_KEY = "GJtgsPlioJ_miak48x4uvtYkVO-YdkCo03BDR4197pI";
   let endPoint = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}`
   
@@ -54,3 +54,16 @@ function navShow() {
       }, 5000)
   }
   fetchImage();
+
+  // MODAL CODE
+
+  setTimeout(() => {
+    $(".modal").modal("show");
+   }, 3000);
+
+   function subscribe() {
+    var email = $("#email").val();
+
+    console.log("Subscribed with email: " + email);
+    $(".modal").modal("hide");
+   }
