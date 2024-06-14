@@ -1,3 +1,25 @@
+body {
+  background-color: #548D44;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  background-color: rgb(246, 248, 255);
+  padding: 3px;
+}
+
+/* HEADING STYLES */
+h1, h2 {
+  color: #548D44;
+  font-weight: inherit;
+}
+
+h3 {
+  font-weight: inherit;
+  font-size: 20px;
+}
+
 .testBtn {
   padding: 15px;
   border: #548D44 2px solid;
@@ -8,4 +30,41 @@
   border: #70ba5c 2px solid;
   background-color: rgb(228, 244, 236);
   color: #70ba5c;
+}
+
+.homeGall {
+  background-color: #548D44;
+}
+
+.topPara {
+  color: rgb(41, 41, 41);
+  background-color: #548D44;
+  filter: drop-shadow(8px 8px 10px gray);
+}
+
+.info {
+  color: rgb(41, 41, 41);
+  background-color: rgb(246, 248, 255);
+  display: flex;
+  text-align: left;
+}
+
+.pairImg {
+  background-color: #548D44;
+  max-width: 40%;
+  max-height: 40%;
+}
+
+/* Prices STYLES */
+.prices {
+  background-color: rgb(246, 248, 255);
+  text-align: left;
+  padding: 1%;
+}
+
+.priceTag {
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: rgb(41, 41, 41);
 }/*# sourceMappingURL=styles2.css.map */

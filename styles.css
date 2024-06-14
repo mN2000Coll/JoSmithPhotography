@@ -1,32 +1,8 @@
-body {
-    background-color: #548D44;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-}
-
-main {
-    background-color: rgb(246, 248, 255);
-    padding: 3px;
-}
-
-
-
-/* HEADING STYLES */
-h1, h2 {
-    color: #548D44;
-    font-weight: inherit;
-}
-
-h3 {
-    font-weight: inherit;
-}
-
 /* NAV STYLES */
-
 nav {
     font-size: 20px;
     padding: 5px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(41, 41, 41);
 }
 
 .navBlock {
@@ -78,33 +54,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.homeGall {
-    background-color: #548D44;
-}
-
-.topPara {
-    color: rgb(41, 41, 41);
-    background-color:#548D44;
-    filter: drop-shadow(8px 8px 10px gray);
-}
-
-.info {
-    color: rgb(41, 41, 41);
-    background-color: rgb(246, 248, 255);
-    display: flex;
-    text-align: left;
-}
-
-
+/* BUTTON ANIMATION */
 @keyframes btnFilt {
     from {filter:hue-rotate(0deg);}
     to {filter:hue-rotate(360deg);}
-}
-
-.pairImg {
-    background-color: #548D44;
-    max-width: 40%;
-    max-height: 40%;
 }
 
 /* FOOTER STYLES */
@@ -126,12 +79,13 @@ nav a:hover {
     max-height: 35px;
 }
 
-
+/* Contact Styles */
 .map {
     width: 100%;
     height: 100%;
     border:0; display: block; margin: auto; height: 500px; padding: 20px;
 }
+
 
 @media only screen and (max-width: 700px) {
     nav {
@@ -151,13 +105,11 @@ nav a:hover {
     .navBlock #navLinks {
         display: none;
         flex-direction: column;
-      }
+    }
     
-
     .burger {
         display: flex;
         width: auto;
-        
         padding-right: 5px;
     }
 
@@ -167,7 +119,7 @@ nav a:hover {
     }
 
     .pairImg {
-        max-width: 100%;
+        max-width: 100% !important;
         max-height: 100%;
     }
     
