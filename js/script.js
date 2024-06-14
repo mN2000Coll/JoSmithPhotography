@@ -55,15 +55,11 @@ function navShow() {
   }
   fetchImage();
 
-  // MODAL CODE
-
-  setTimeout(() => {
-    $(".modal").modal("show");
-   }, 3000);
-
-   function subscribe() {
-    var email = $("#email").val();
-
-    console.log("Subscribed with email: " + email);
-    $(".modal").modal("hide");
-   }
+  function tabGall(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  

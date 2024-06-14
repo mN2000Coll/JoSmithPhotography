@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="jq/jqueryUI/jquery-ui.min.css">
+    <link rel="stylesheet" href="viewbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="jquery.viewbox.min.js"></script>
 </head>
 
 <body>
@@ -57,12 +60,39 @@
         <section class="top-section mt-1 mb-1">
             <div class="class container-fluid">
                 <div class="class row text-center text-light g-2">
+                    <h1>Our Gallery</h1>
                     <div class="col-sm-12 col-md-12 col-lg-10 m-auto mt-4">
-                        <div class="topPara m-1">
-                           
+                        <div class=" m-1">
+                            <div style="text-align:center">
+                                <h2>Tabbed Image Gallery</h2>
+                                <p>Click on the images below:</p>
+                              </div>
+                              
+                              <!-- The four columns -->
+                              <div class="row">
+                                <div class="column">
+                                  <img src="images/wedded.webp" alt="Wedding Part 1" style="width:100%" onclick="tabGall(this);">
+                                </div>
+                                <div class="column">
+                                  <img src="images/wedding6.webp" alt="Wedding Part 2" style="width:100%" onclick="tabGall(this);">
+                                </div>
+                                <div class="column">
+                                  <img src="images/wedding.webp" alt="Wedding Part 3" style="width:100%" onclick="tabGall(this);">
+                                </div>
+                                <div class="column">
+                                  <img src="images/wedding0.webp" alt="Wedding Part 4" style="width:100%" onclick="tabGall(this);">
+                                </div>
+                              </div>
+
+                              <div class="container">
+                                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                                <img id="expandedImg" style="width:100%" class="info">
+                                <div id="imgtext"></div>
+                              </div>
+
                         </div>
                     </div>
-                    <h2>Check out these Images</h2>
+                    <h2 style="margin-top: 70px;">Check out these Images</h2>
                     <div class="col-sm-10 col-md-12 col-lg-8 m-auto mt-4">
                     <div class="topPara">
                         <div id="column_details">
